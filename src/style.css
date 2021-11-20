@@ -1,0 +1,365 @@
+/*,
+
+ */
+
+ 
+ 
+ 
+ 
+ 
+ /* Первая страница*/
+ 
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+.header__list {
+    display: flex;
+    list-style: none;
+}
+
+
+.header__item {
+    margin-right: 12px;
+
+
+}
+
+.product__content {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:20px;
+    row-gap:60px; 
+}
+
+ .product__card {
+     
+   /* display:block;
+    width: 100%;
+    height:250px;
+    flex:0 1 calc(33.333%- 20px);
+    min-width:300px*/
+    display:grid;
+    grid-template-columns: repeat (3, 1fr) 250px;
+    grid-template-rows:250px 250px 250px;
+    column-gap:20px;
+    row-gap:60px; 
+}
+
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.product__card {
+    display: block;
+    background-color:white;
+    border:1px solid black;
+    text-decoration: none;
+}
+
+.header__card {
+    position: relative;
+    padding: 5px;
+    transition: box-shadow 500ms ease;
+}
+
+.header__card:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.header__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 52px;
+    height: 52px;
+
+    background: url("") no-repeat center center/cover;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 500ms ease, opacity 500ms ease;
+}
+
+.header__card:hover .header__card::before {
+    opacity: 1;
+    visibility: visible;
+}
+ 
+
+
+
+
+/* Шестая страница*/
+
+
+.H3{
+    font-size:32px;
+    font-weight:700;
+     
+}
+
+.Btn__span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.Main__Sixpage {
+ display: flex;
+ justify-content: space-between;
+  
+
+}
+
+
+.Cart__right {
+display: flex;
+
+
+}
+
+.Cart__left {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+ .Apollo {
+   font-weight: 600; 
+   font-size: 30px;
+   list-style-type: none;
+   /*margin-top: 60px;*/
+}
+.Running__short {
+    list-style-type: none;
+     
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+     
+}
+ 
+.Product__price {
+    list-style-type: none;
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.S1 {
+ width: 63px;
+ height: 45px;
+ left: 176px;  
+ top: 420px;
+   
+
+}
+.M1 {
+    width: 63px;
+    height: 45px;
+    left: 101px;
+    top: 420px;
+    }
+
+.S {
+    width: 45px;
+    height: 45px;
+ 
+}
+.M {
+    width: 45px;
+    height: 45px;
+ 
+}
+.M:hover {
+    background-attachment: black;
+}
+ 
+.Main__Sixpage2 {
+
+display: flex;
+justify-content: space-between;
+
+
+}
+
+.Cart__left2 {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.Cart__right2 {
+    display: flex;
+     
+      
+}
+.Btn__span2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Jupiter {
+    font-weight: 600; 
+    font-size: 30px;
+    list-style-type: none;
+    margin-top: 20px;
+ }
+ .Wayfarer {
+     list-style-type: none;
+     margin-top: 16px;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 24px;
+ }
+  
+ .Product__price2 {
+     list-style-type: none;
+     margin-top: 16px;
+     font-size: 24px;
+     font-weight: 700;
+     line-height: 18px;
+ }
+ 
+ .S2 {
+  width: 63px;
+  height: 45px;
+  left: 176px;
+  top: 420px;
+ 
+ 
+ }
+ .M2 {
+     width: 63px;
+     height: 45px;
+     left: 101px;
+     top: 420px;
+    
+ 
+ 
+ }
+ .S3 {
+     width: 45px;
+     height: 45px;
+  
+ }
+ .M3 {
+     width: 45px;
+     height: 45px;
+  
+ }
+
+ /*  4 страница*/
+
+.Middle__main {
+    display:flex;
+    justify-content:space-around;
+}
+
+.Middle__left4 {
+display:flex;
+flex-direction:column;
+
+}
+
+.Middle__middle {
+width:560px;
+height:560px;
+border:1px solid black;
+
+}
+
+
+.Price__main {
+
+display: flex;
+flex-direction: column;
+max-width: 310px;
+
+}
+.Price1{
+    font-weight:700;
+    font-size:18px
+     
+}
+.Find {
+   /* display: block;*/
+
+}
+
+ .XS4{
+     width: 63px;
+     height: 45px;
+}
+
+.S4{
+    width: 63px;
+    height: 45px;
+
+}
+
+.M4 {
+
+    width: 63px;
+    height: 45px;
+}
+
+.L4  {
+
+    width: 63px;
+    height: 45px;
+}
+
+.Add_to_cart {
+ border: 2px solid green;
+ color:white ;
+ background-color: #5ECE7B;
+ width: 292px;
+ height: 52px;
+
+}
+
+.Size4{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+
+v
+
+.Btn__rt .M4:hover {
+        background: yellow;
+        color: red;
+      }
+ 
+
+ 
